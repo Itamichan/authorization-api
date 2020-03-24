@@ -82,7 +82,8 @@ def register():
         response.status_code = 401
         return response
 
-    except:
+    except Exception as e:
+        print(e)
         response = jsonify({'error': 'unknown error', 'description': 'internal server error'})
         response.status_code = 500
         return response

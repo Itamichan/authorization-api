@@ -5,7 +5,6 @@ import pymysql
 
 User = namedtuple('User', 'id username email password secret')
 
-
 DB_HOST = os.environ.get('DB_HOST', 'localhost')
 DB_USER = os.environ.get('DB_USER', 'cristina')
 DB_PASSWORD = os.environ.get('DB_PASSWORD', 'password')
